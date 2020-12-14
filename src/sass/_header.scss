@@ -1,0 +1,90 @@
+$box-width:1200px;
+$fontsize:12px;
+$fontsize2:16px;
+.head-note {
+    background-color: #ffc;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.header-main {
+    width: $box-width;
+    position: relative;
+    margin: 0 auto;
+    padding: 12px 0 7px 0;
+    overflow: hidden;
+    .header-logo {
+        height: 75px;
+        background: url(http://i0.ulecdn.com/ule/header/images/logo.png) no-repeat left bottom;
+        width: 75px;
+        float: left;
+        .logo-a {
+            width: 75;
+            a {
+                display: block;
+                height: 75px;
+                text-indent: -999px;
+            }
+        }
+    }
+    .header-search {
+        float: left;
+        margin-left: 200px;
+        margin-top: 10px;
+        .txt {
+            width: 447px;
+            height: 30px;
+            border: solid 3px #c7181d;
+        }
+        .sub {
+            width: 76px;
+            height: 36px;
+            background-color: #c7181d;
+            border: none;
+            position: absolute;
+        }
+    }
+    p {
+        margin-top: 5px;
+        .red {
+            color: #c51010;
+        }
+        a {
+            margin-right: 3px;
+            color: #666;
+        }
+    }
+}
+
+.header-gouwuche {
+    width: 158px;
+    height: 34px;
+    float: right;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    .icon-gouwuchekong {
+        color: red;
+        margin-left: 10px;
+        line-height: 34px;
+    }
+    i {
+        height: 13px;
+        width: 1px;
+        border-left: 2px solid #ccc;
+        margin-left: 10px;
+    }
+    span {
+        margin-left: 26px;
+        font-size: 16px;
+        color: red;
+    }
+    .icon-xiangxia {
+        color: #000;
+        margin: 0;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+}

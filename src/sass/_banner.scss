@@ -1,0 +1,112 @@
+.banner {
+    //  border: 1px solid;
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    .banner-nav {
+        width: 100%;
+        // height: 40px;
+        background-color: #a71b1b;
+        .list-main {
+            width: $box-width;
+            height: 40px;
+            margin: 0 auto;
+            .fenlei {
+                height: 40px;
+                width: 190px;
+                float: left;
+                background: url(http://i0.ulecdn.com/ule/www/hp/2016/0914/images/sprite_category.png) no-repeat 0 -17px;
+                cursor: pointer;
+            }
+            li {
+                float: left;
+                font-size: $fontsize2;
+                line-height: 40px;
+                 :hover {
+                    background: red;
+                }
+                a {
+                    color: white;
+                    display: block;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+    .banner-main {
+        width: $box-width;
+        margin: 0 auto;
+        position: relative;
+        .banner-menu {
+            position: absolute;
+            text-indent: 999;
+        }
+        .iconfont {
+            color: red;
+            margin-left: 15px;
+            line-height: 35.5px;
+            em {
+                color: #000;
+                margin-left: 10px;
+                font-size: 14px;
+            }
+        }
+        ul li {
+            width: 190px;
+            line-height: 25px;
+            background-color: rgba(236, 228, 228, 0.8);
+            a {
+                display: inline-block;
+                width: 100%;
+                 :hover {
+                    color: red;
+                }
+            }
+             :hover {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+ol {
+    position: absolute;
+    left: 900px;
+    bottom: -450px;
+    // border: 1px solid;
+    li {
+        float: left;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #fff;
+        text-indent: -999em;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+}
+
+ol li.active {
+    background: blue;
+}
+
+.cartlist {
+    position: absolute;
+    left: 191px;
+    top: 0;
+    width: 1008px;
+    min-height: 470px;
+    border: 1px solid #ff0000;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, .3);
+    display: none;
+    transition: top 0.3s ease;
+    .item {
+        padding: 20px;
+        display: none;
+    }
+}
+
+.banner-lunbo ul li {
+    position: absolute;
+}

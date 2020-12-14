@@ -1,0 +1,75 @@
+$box-width:1200px;
+$fontsize:12px;
+$fontsize2:16px;
+.top {
+    background-color: #f7f7f7;
+    padding: 8px 0;
+    .top-main {
+        width: $box-width;
+        margin: 0 auto;
+        overflow: hidden;
+        .top-left {
+            padding-left: 20px;
+            float: left;
+            font-size: $fontsize;
+            background: url(http://i0.ulecdn.com/ule/header/images/ico_return-home.png) no-repeat 0 center;
+            select {
+                width: 60px;
+                height: 20px;
+                margin-top: 1px;
+                margin-left: 8px;
+            }
+        }
+        .top-middle {
+            float: right;
+            ul {
+                float: right;
+                li {
+                    float: left;
+                    padding: 0 12px;
+                    border-left: 2px solid #ccc;
+                    line-height: 18px;
+                }
+                .phone {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.a1,
+.a2 {
+    color: blue;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.a2 {
+    margin-right: 10px;
+}
+
+.icon-xiangxia,
+.icon-liebiao,
+.icon-shouji {
+    font-size: 13px;
+}
+
+.icon-shouji {
+    color: red;
+    font-size: $fontsize2;
+}
+
+.phone a {
+    color: red;
+}
+
+.icon-phone {
+    font-size: 16px;
+    color: red;
+}
+
+.icon-sousuo {
+    font-size: 30px;
+    color: #fff;
+}

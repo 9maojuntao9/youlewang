@@ -1,0 +1,341 @@
+$box-width:1200px;
+.main {
+    background: #f7f7f7;
+    width: 100%;
+    overflow: hidden;
+}
+
+.title {
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.main-top {
+    width: $box-width;
+    margin: 15px auto;
+    background-color: #fff;
+    overflow: hidden;
+    h4 {
+        width: 210px;
+        float: left;
+        font-size: 16px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .f span {
+        display: inline-block;
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+        height: 25px;
+        background: url(https://i0.ulecdn.com/ule/www/hp/2016/0914/images/sprite_category2018.png) no-repeat -25px 0;
+    }
+    .s span {
+        display: inline-block;
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 5px;
+        height: 25px;
+        background: url(https://i0.ulecdn.com/ule/www/hp/2016/0914/images/sprite_category2018.png) no-repeat -105px 0;
+    }
+    .f:hover {
+        color: red;
+        background: #fdf3f2;
+    }
+    .f:hover span {
+        background: url(https://i0.ulecdn.com/ule/www/hp/2016/0914/images/sprite_category2018.png) no-repeat 0 0;
+    }
+    .s:hover {
+        color: red;
+        background: #fdf3f2;
+    }
+    .s:hover span {
+        background: url(https://i0.ulecdn.com/ule/www/hp/2016/0914/images/sprite_category2018.png) no-repeat -132px 0;
+    }
+    li {
+        width: 201px;
+        height: 250px;
+        float: left;
+        padding: 10px 19px;
+        border-right: 1px solid #ccc;
+    }
+    .last {
+        border: none;
+    }
+    h5 {
+        font-weight: normal;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+    p {
+        color: red;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+.main-img {
+    text-align: center;
+}
+
+// 舌尖美食
+.main-food {
+    width: $box-width;
+    margin: 0 auto;
+    overflow: hidden;
+    .food-title {
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    .food-title i {
+        display: inline-block;
+        width: 5px;
+        height: 25px;
+        background: #ff7b30;
+        float: left;
+    }
+    h3 {
+        float: left;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #ff7b30;
+        cursor: pointer;
+    }
+    .more,
+    .sale {
+        float: right;
+        font-size: 16px;
+        color: #333;
+        &:hover {
+            color: orange;
+        }
+    }
+    .more {
+        text-indent: -9999px;
+        width: 20px;
+        height: 20px;
+        color: #f7f7f7;
+        background: url(https://i0.ulecdn.com/ule/www/hp/2014/0710/images/sprite_channel3.png) 88px -32px;
+    }
+    a {
+        margin-left: 10px;
+        float: left;
+        margin-top: 12px;
+        color: #99999b;
+        font-size: 14px;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.food-main {
+    border-top: 1px solid orange;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.food-left {
+    float: left;
+    margin-left: -10px;
+    margin-top: -12px;
+}
+
+.food-right {
+    width: 930px;
+    height: 550px;
+    background-color: f7f7f7;
+    float: right;
+    li {
+        width: 202px;
+        height: 250px;
+        float: left;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #fff;
+        position: relative;
+         :hover {
+            margin-top: -2px;
+        }
+    }
+    h5 {
+        font-size: 14px;
+        width: 202px;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+.end {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: #ccc;
+    background-color: #f7f7f7;
+}
+
+.main-fur {
+    @extend .main-food;
+}
+
+.fur-main {
+    @extend .food-main;
+}
+
+.fur-left {
+    @extend .food-left;
+}
+
+.fur-right {
+    @extend .food-right;
+}
+
+.fur-title {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main-life {
+    @extend .main-food;
+}
+
+.life-main {
+    @extend .food-main;
+}
+
+.life-left {
+    @extend .food-left;
+}
+
+.life-right {
+    @extend .food-right;
+}
+
+.life-title {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main-fad {
+    @extend .main-food;
+}
+
+.fad-main {
+    @extend .food-main;
+}
+
+.fad-left {
+    @extend .food-left;
+}
+
+.fad-right {
+    @extend .food-right;
+}
+
+.fad-title {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main-mark {
+    @extend .main-food;
+}
+
+.mark-main {
+    @extend .food-main;
+}
+
+.mark-left {
+    @extend .food-left;
+}
+
+.mark-right {
+    @extend .food-right;
+}
+
+.mark-title {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main-look {
+    width: $box-width;
+    margin: 0 auto;
+    h5 {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    li {
+        float: left;
+        width: 200px;
+        height: 280px;
+        padding: 15px;
+        background-color: #fff;
+        margin: 8px 8px 8px 2px;
+        // position: relative;
+        //  :hover {
+        //     margin-top: -10px;
+        // }
+    }
+    p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    span {
+        font-size: 16px;
+        color: red;
+    }
+}
+
+.float {
+    position: fixed;
+    width: 32px;
+    left: 120px;
+    bottom: 200px;
+    display: none;
+    span {
+        display: inline-block;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #666;
+        color: #666;
+    }
+    .active {
+        background-color: orange;
+    }
+    .fj {
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        background: url(https://i0.ulecdn.com/ule/www/hp/2014/0710/images/returntop2.png) no-repeat;
+    }
+}
