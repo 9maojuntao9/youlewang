@@ -1,0 +1,525 @@
+@charset "UTF-8";
+html {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #666666;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+select {
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+fieldset,
+img {
+    border: 0 none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset p {
+    margin: 0;
+    padding: 0 0 0 8px;
+}
+
+legend {
+    display: none;
+}
+
+address,
+caption,
+em,
+strong,
+th,
+i {
+    font-style: normal;
+    font-weight: 400;
+}
+
+table caption {
+    margin-left: -1px;
+}
+
+hr {
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 1px solid #E4E4E4;
+    border-width: 1px 0;
+    clear: both;
+    height: 2px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+ol,
+ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: ””;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+}
+
+.head-note {
+    background-color: #ffc;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.top {
+    background-color: #f7f7f7;
+    padding: 8px 0;
+}
+
+.top .top-main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.top .top-main .top-left {
+    padding-left: 20px;
+    float: left;
+    font-size: 12px;
+    background: url(http://i0.ulecdn.com/ule/header/images/ico_return-home.png) no-repeat 0 center;
+}
+
+.top .top-main .top-middle {
+    float: right;
+}
+
+.top .top-main .top-middle ul {
+    float: right;
+}
+
+.top .top-main .top-middle ul li {
+    float: left;
+    padding: 0 12px;
+    border-left: 2px solid #ccc;
+    line-height: 18px;
+}
+
+.top .top-main .top-middle ul .phone {
+    font-size: 14px;
+}
+
+.a1,
+.a2 {
+    color: blue;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.a2 {
+    margin-right: 10px;
+}
+
+.icon-xiangxia,
+.icon-liebiao,
+.icon-shouji {
+    font-size: 13px;
+}
+
+.icon-shouji {
+    color: red;
+    font-size: 16px;
+}
+
+.phone a {
+    color: red;
+}
+
+.icon-phone {
+    font-size: 16px;
+    color: red;
+}
+
+.icon-sousuo {
+    font-size: 30px;
+    color: #fff;
+}
+
+.header {
+    border-bottom: solid 4px #a71b1c;
+}
+
+.header-main {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    padding: 12px 0 7px 0;
+    overflow: hidden;
+}
+
+.header-main .header-logo {
+    height: 75px;
+    background: url(http://i0.ulecdn.com/ule/header/images/logo.png) no-repeat left bottom;
+    width: 75px;
+    float: left;
+}
+
+.header-main .header-logo .logo-a {
+    width: 75;
+}
+
+.header-main .header-logo .logo-a a {
+    display: block;
+    height: 75px;
+    text-indent: -999px;
+}
+
+.footer {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.footer-top {
+    padding: 0 30px;
+    margin-bottom: -40px;
+}
+
+.footer-top a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.youz {
+    display: inline-block;
+    width: 210px;
+    height: 52px;
+    margin-bottom: 100px;
+    vertical-align: middle;
+    margin-right: 60px;
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -50px -128px;
+}
+
+.pingzhi {
+    display: inline-block;
+    width: 210px;
+    height: 52px;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    vertical-align: middle;
+    margin-right: 60px;
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -346px -128px;
+}
+
+.peisong {
+    display: inline-block;
+    width: 210px;
+    margin-bottom: 100px;
+    vertical-align: middle;
+    height: 52px;
+    margin-right: 60px;
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -646px -128px;
+}
+
+.weixin {
+    display: inline-block;
+    width: 210px;
+    height: 82px;
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -946px -128px;
+}
+
+.footer-main .last {
+    padding-right: 0;
+}
+
+.footer-main ul {
+    border-bottom: 1px solid #888;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.footer-main li {
+    float: left;
+    width: 120px;
+    padding-right: 96px;
+    margin-bottom: 10px;
+}
+
+.footer-main li h4 {
+    color: #666;
+    line-height: 22px;
+    margin: 0 0 5px;
+    border-bottom: dotted 1px #ccc;
+}
+
+.footer-main li a {
+    display: block;
+    color: #888;
+    line-height: 22px;
+}
+
+.footer-license {
+    float: left;
+}
+
+.footer-license li {
+    float: left;
+    margin-right: 10px;
+}
+
+.copy {
+    float: left;
+    margin-top: 8px;
+}
+
+.copy li {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.copy span {
+    float: left;
+}
+
+.copy .s {
+    margin-left: 0;
+}
+
+.footer-tp {
+    float: left;
+    width: 1200px;
+    margin-top: 20px;
+}
+
+.footer-tp a {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.footer-tp .a1 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat 0 0;
+}
+
+.footer-tp .a2 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -110px 0;
+}
+
+.footer-tp .a3 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -220px 0;
+}
+
+.footer-tp .a4 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -330px 0;
+}
+
+.footer-tp .a5 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -440px 0;
+}
+
+.footer-tp .a6 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -550px 0;
+}
+
+.footer-tp .a7 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -660px 0;
+}
+
+.footer-tp .a8 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -770px 0;
+}
+
+.footer-tp .a9 {
+    background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -880px 0;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid;
+    height: 495px;
+    background: url(https://pic2.ulecdn.com/item/user_0102/desc20200414/c64812dced744da4_-1x-1.jpg);
+}
+
+.wrapper-main {
+    width: 332px;
+    height: 485px;
+    background-color: #fff;
+    float: right;
+    margin-right: 120px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+form h5 {
+    font-size: 16px;
+    margin: 18px 0 26px 15px;
+    color: #333;
+}
+
+.erwma {
+    width: 70px;
+    height: 70px;
+    float: right;
+    cursor: pointer;
+    margin-top: -65px;
+    background: url(https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001_png8.png) no-repeat;
+}
+
+.erwma:hover {
+    background: url(https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001_png8.png) no-repeat 0 -100px;
+}
+
+.input {
+    width: 285px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.check {
+    float: left;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+p a {
+    color: cornflowerblue;
+    line-height: 20px;
+}
+
+.phone1,
+.yzm {
+    width: 302px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+.yzm {
+    margin-top: 20px;
+}
+
+.denglu {
+    width: 304px;
+    height: 40px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin-left: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.p1 {
+    float: right;
+    margin-right: 20px;
+    color: dodgerblue;
+    margin-top: 10px;
+}
+
+.coop {
+    width: 317px;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.coop a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: dodgerblue;
+}
+
+.coop a:nth-of-type(1) {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat;
+}
+
+.coop a:nth-of-type(2) {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -60px 0;
+}
+
+.coop a:nth-of-type(3) {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -120px 0;
+}
+
+.coop a:nth-of-type(4) {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -195px 0;
+}
+
+.coop a:nth-of-type(1):hover {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat 0 -59px;
+}
+
+.coop a:nth-of-type(2):hover {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -60px -59px;
+}
+
+.coop a:nth-of-type(3):hover {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -120px -59px;
+}
+
+.coop a:nth-of-type(4):hover {
+    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -195px -59px;
+}

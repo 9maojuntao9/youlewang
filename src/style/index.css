@@ -130,7 +130,6 @@ a {
 
 .header-main {
   width: 1200px;
-  position: relative;
   margin: 0 auto;
   padding: 12px 0 7px 0;
   overflow: hidden;
@@ -175,6 +174,49 @@ a {
 .header-main p a {
   margin-right: 3px;
   color: #666;
+}
+
+.header2 {
+  width: 100%;
+  top: -999px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 999;
+  padding-top: 10px;
+}
+.header2 .header2-main {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header2 .header2-main .header2-logo {
+  height: 50px;
+  background: url(https://i0.ulecdn.com/ule/common/css/images/zjl_icon_002.png) no-repeat;
+  width: 75px;
+  float: left;
+}
+.header2 .header2-main .header2-logo .logo-a {
+  width: 75;
+}
+.header2 .header2-main .header2-logo .logo-a a {
+  display: block;
+  text-indent: -999px;
+}
+.header2 .header2-main .header2-search {
+  float: left;
+  margin-left: 200px;
+}
+.header2 .header2-main .header2-search .txt {
+  width: 447px;
+  height: 30px;
+  border: solid 3px #c7181d;
+}
+.header2 .header2-main .header2-search .sub {
+  width: 76px;
+  height: 36px;
+  background-color: #c7181d;
+  border: none;
+  position: absolute;
 }
 
 .header-gouwuche {
@@ -317,7 +359,6 @@ a {
 .banner .banner-main {
   width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 .banner .banner-main .banner-menu {
   position: absolute;
@@ -679,10 +720,12 @@ body {
 .footer {
   width: 1200px;
   margin: 0 auto;
+  border-top: 1px solid #ddd;
 }
 
 .footer-top {
   padding: 0 30px;
+  margin-bottom: -40px;
 }
 .footer-top a {
   font-size: 20px;

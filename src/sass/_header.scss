@@ -12,7 +12,6 @@ $fontsize2:16px;
 
 .header-main {
     width: $box-width;
-    position: relative;
     margin: 0 auto;
     padding: 12px 0 7px 0;
     overflow: hidden;
@@ -55,6 +54,51 @@ $fontsize2:16px;
         a {
             margin-right: 3px;
             color: #666;
+        }
+    }
+}
+
+// 第二个header
+.header2 {
+    width: 100%;
+    top: -999px;
+    position: fixed;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    z-index: 999;
+    padding-top: 10px;
+    .header2-main {
+        width: $box-width;
+        margin: 0 auto;
+        overflow: hidden;
+        .header2-logo {
+            height: 50px;
+            background: url(https://i0.ulecdn.com/ule/common/css/images/zjl_icon_002.png) no-repeat;
+            width: 75px;
+            float: left;
+            .logo-a {
+                width: 75;
+                a {
+                    display: block;
+                    // height: 75px;
+                    text-indent: -999px;
+                }
+            }
+        }
+        .header2-search {
+            float: left;
+            margin-left: 200px;
+            .txt {
+                width: 447px;
+                height: 30px;
+                border: solid 3px #c7181d;
+            }
+            .sub {
+                width: 76px;
+                height: 36px;
+                background-color: #c7181d;
+                border: none;
+                position: absolute;
+            }
         }
     }
 }

@@ -44,7 +44,7 @@
     // 数据渲染
     $ul = $('.main-look ul');
     $.ajax({
-        url: 'http://localhost:8083/youlewang/php/xuanran.php',
+        url: 'http://10.31.161.57:8083/youlewang/php/xuanran.php',
         dataType: 'json',
     }).done(function(data) {
         var $html = '';
@@ -111,5 +111,13 @@
             scrollTop: 0,
         })
     })
-
-}(jQuery)
+    const $list = $('.menu li');
+    const $cartlist = $('.cartlist');
+    const $items = $('.item');
+    $list.hover(function() {
+            $cartlist.show();
+            $(this).addClass('active').siblings('li').removeClass('active');
+            //切换内容发生改变，不同的li对应不同的内容块。
+            $items.eq($(this).index()).show().siblings('.item').hide();
+        }
+    }(jQuery)
