@@ -14,7 +14,7 @@ $conn = @new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
 if($conn->connect_error){
     die('连接数据库错误,'.$conn->connect_error);//die():退出程序并返回括号里面的值。
 }
-$result = $conn->query("select * from taobaogoods"); //获取数据的结果集(记录集)
+$result = $conn->query("select * from womanlist"); //获取数据的结果集(记录集)
 
 $num = $result->num_rows; //记录集的总条数  40
 
@@ -36,7 +36,7 @@ if (isset($_GET['page'])) {//判断前端传入的页码是否存在，
 
 $page = ($pagevalue - 1) * $pagesize; //计算开始偏移值
 
-$res = $conn->query("select * from taobaogoods limit $page,$pagesize");
+$res = $conn->query("select * from womanlist limit $page,$pagesize");
 
 
 //通过二维数组输出

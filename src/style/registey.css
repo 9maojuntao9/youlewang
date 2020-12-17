@@ -393,143 +393,58 @@ a {
     background: url(https://i0.ulecdn.com/ule/header/images/footer1603.png?t=1) no-repeat -880px 0;
 }
 
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    border: 1px solid;
-    height: 495px;
-    background: url(https://pic2.ulecdn.com/item/user_0102/desc20200414/c64812dced744da4_-1x-1.jpg);
+fieldset {
+    width: 920px !important;
+    height: 500px;
+    border: 1px solid #888;
 }
 
-.wrapper-main {
-    width: 332px;
-    height: 485px;
-    background-color: #fff;
-    float: right;
-    margin-right: 120px;
-    margin-top: 5px;
-    border-radius: 5px;
+form {
+    margin-left: 250px;
 }
 
-form h5 {
-    font-size: 16px;
-    margin: 18px 0 26px 15px;
-    color: #333;
-}
-
-.erwma {
-    width: 70px;
-    height: 70px;
-    float: right;
-    cursor: pointer;
-    margin-top: -65px;
-    background: url(https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001_png8.png) no-repeat;
-}
-
-.erwma:hover {
-    background: url(https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001_png8.png) no-repeat 0 -100px;
-}
-
-.input {
-    width: 285px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.check {
-    float: left;
-    margin-top: 3px;
-    margin-right: 3px;
-}
-
-p a {
-    color: cornflowerblue;
-    line-height: 20px;
-}
-
-#username,
-#password {
-    width: 302px;
-    height: 40px;
-    margin-left: 12px;
-}
-
-#password {
+form input {
+    width: 278px;
+    height: 38px;
     margin-top: 20px;
 }
 
-#login {
-    width: 304px;
-    height: 40px;
-    background-color: red;
-    color: #fff;
-    border: none;
-    margin-left: 12px;
-    font-size: 16px;
-    margin-top: 10px;
-    font-weight: bold;
-    margin-top: 30px;
+label {
+    font-size: 14px;
 }
 
-.wrapper-top {
-    height: 70px;
-    font-size: 16px;
-    padding-left: 30px;
-    padding-top: 30px;
-    background: url(https://i0.ulecdn.com/i/login/2015/0925/icon_zjl_001_png8.png) no-repeat 262px 0;
+#submit {
+    margin-left: 70px;
+    height: 38px;
 }
 
-.wrapper-top p {
-    font-weight: bold;
+.top2 {
+    width: 900px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    background: url(https://i0.ulecdn.com/i/login/2016/0808/title_tip.jpg) no-repeat 500px 20px;
+    margin-top: 16px;
+    margin-left: 60px;
+    border-bottom: 1px solid #ccc;
 }
 
-.p1 {
-    margin-top: 10px;
+.check {
+    width: 12px;
+    margin-top: 5px;
+    float: left;
 }
 
-.coop {
-    width: 317px;
-    margin: 0 auto;
-    margin-top: 70px;
-    text-align: center;
+.wsj {
+    margin-top: 20px;
 }
 
-.coop a {
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-    margin-right: 10px;
-    background-color: dodgerblue;
+.wsj span {
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
 }
 
-.coop a:nth-of-type(1) {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat;
-}
-
-.coop a:nth-of-type(2) {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -60px 0;
-}
-
-.coop a:nth-of-type(3) {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -120px 0;
-}
-
-.coop a:nth-of-type(4) {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -195px 0;
-}
-
-.coop a:nth-of-type(1):hover {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat 0 -59px;
-}
-
-.coop a:nth-of-type(2):hover {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -60px -59px;
-}
-
-.coop a:nth-of-type(3):hover {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -120px -59px;
-}
-
-.coop a:nth-of-type(4):hover {
-    background: url(https://i0.ulecdn.com/i/login/2015/0415/links_icon.png) no-repeat -195px -59px;
+span a {
+    color: cornflowerblue;
 }

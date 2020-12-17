@@ -7,6 +7,7 @@
     <title>用户登录-邮乐</title>
     <link rel="stylesheet" href="../download/font_iv1v5h9rnl/iconfont.css">
     <link rel="stylesheet" href="style/login.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
 </head>
 
 <body>
@@ -46,18 +47,13 @@
     </div>
     <div class="wrapper">
         <div class="wrapper-main">
-            <form action="" method="POST">
-                <h5>登录</h5>
-                <div class="erwma"></div>
-                <input type="text" placeholder="请输入您的手机号" class="phone1">
-                <input type="text" placeholder="请输入短信验证码" class="yzm">
-                <div class="input">
-                    <input type="checkbox" class="check">
-                    <p>同意<a href="">《邮乐用户协议》</a><a href="">《隐私权政策》</a> <a href="">《积分授权及账户绑定条款》</a> <a href="">《中国邮政会员服务协议》</a> 及其相关的条款和条件
-                    </p>
-                </div>
-                <input type="submit" value="立即登录" class="denglu">
-                <p class="p1">使用账号密码登录</p>
+            <div class="wrapper-top">
+                <p>登录</p>
+            </div>
+            <form action="" method="post">
+                <p class="p1"><input type="text" placeholder="请输入您的用户名" name="username" id="username"></p>
+                <p><input type="password" placeholder="请输入您的密码" name="password" id="password"></p>
+                <p><input type="button" value="登录" id="login"></p>
             </form>
             <div class="coop">
                 <h6>您也可以使用以下合作网站帐号</h6>

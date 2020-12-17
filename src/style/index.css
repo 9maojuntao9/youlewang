@@ -393,7 +393,7 @@ a {
 ol {
   position: absolute;
   left: 900px;
-  bottom: -450px;
+  top: 640px;
 }
 ol li {
   float: left;
