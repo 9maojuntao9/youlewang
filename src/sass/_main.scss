@@ -315,7 +315,7 @@ $box-width:1200px;
 .float {
     position: fixed;
     width: 32px;
-    left: 120px;
+    margin-left: -50px;
     bottom: 200px;
     display: none;
     span {

@@ -68,7 +68,7 @@ define(['pagination', 'jlazyload'], function() {
             });
 
 
-            // 楼梯效果
+
             const $float = $('.float');
             const $span = $('.float span').not('.fj');
             const $louceng = $('.louceng');
@@ -151,6 +151,19 @@ define(['pagination', 'jlazyload'], function() {
                     })
                 }
             })
+
+            if (localStorage.getItem('loginname')) {
+                $('.admin').show();
+                $('.login').hide();
+                $('.admin span').html(localStorage.getItem('loginname'));
+            }
+
+            //退出登录 - 删除本地存储
+            $('.admin a').on('click', function() {
+                $('.admin').hide();
+                $('.login').show();
+                localStorage.removeItem('loginname');
+            });
         }
     }
 })

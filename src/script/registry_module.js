@@ -13,7 +13,7 @@
             $passflag = true;
             $nextpassflag = true;
             $telflag = true;
-
+            $checkflag = true;
             //用户名检测
             $username.on('focus', function() {
                 $span.eq(0).html('中英文均可，最长14个英文或7个汉字').css('color', '#333');
@@ -40,6 +40,7 @@
                                     $span.eq(0).html('√').css('color', 'green');
                                 } else {
                                     $span.eq(0).html('该用户名已存在').css('color', 'red');
+                                    $userflag = false;
                                 }
                             });
 
@@ -121,29 +122,39 @@
                 if ($(this).val() !== '') {
                     if ($passflag) {
                         $span.eq(2).html('√').css('color', 'green');
+                        $passflag = true;
+
                     }
-                    $passflag = true;
+
                 } else {
                     $span.eq(2).html('请输入密码').css('color', 'red');
                     $passflag = false;
+
                 }
             })
             $nextpass.on('blur', function() {
-                $val = $(this).val();
-                if ($password.val() === $(this).val()) {
-                    $span.eq(3).html('√').css('color', 'green');
-                    $nextpass = true;
+                    $val = $(this).val();
+                    if ($password.val() === $(this).val()) {
+                        $span.eq(3).html('√').css('color', 'green');
+                        $nextpassflag = true;
 
-                } else {
-                    $span.eq(3).html('两次密码不一样').css('color', 'red');
-                    $nextpass = false;
-                }
-            })
+
+                    } else {
+                        $span.eq(3).html('两次密码不一样').css('color', 'red');
+                        $nextpassflag = false;
+
+                    }
+                })
+                // let $check = $('.check');
 
 
 
             //阻止表单的直接跳转。
             $form.on('submit', function() {
+                // if (!$check.is(":checked")) {
+                //     alert('请勾选');
+                //     $checkflag = false;
+                // }
                 if ($username.val() === '') {
                     $span.eq(0).html('用户名不能为空').css('color', 'red');
                     $userflag = false;
@@ -160,7 +171,6 @@
                     $span.eq(3).html('确认密码不能为空').css('color', 'red');
                     $nextpassflag = false;
                 }
-
                 if (!$userflag || !$telflag || !$passflag || !$nextpassflag) {
                     return false;
                 }

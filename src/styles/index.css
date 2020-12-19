@@ -686,8 +686,9 @@ ol li.active {
 
 .float {
   position: fixed;
+  border: 1px solid;
   width: 32px;
-  margin-left: -50px;
+  margin-left: -110px;
   bottom: 200px;
   display: none;
 }
